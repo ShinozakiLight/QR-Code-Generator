@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(28, 26, 28);
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.container input{
+    border: 1px solid rgb(0, 81, 255);
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+}
+
+.container button{
+    background-color: rgb(166, 0, 255);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+#imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+    transition: max-height 1s ease-in-out;
+}
